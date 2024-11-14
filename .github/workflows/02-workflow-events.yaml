@@ -3,8 +3,6 @@ name: "02 - Eventos"
 
 on:
   pull_request:           # Se activa en la creación o actualización de un pull request
-  schedule:               # Programación automática
-    - cron: '43 * * * *'   # Ejecución diaria a medianoche UTC
   workflow_dispatch:      # Desencadenante manual desde GitHub Actions
 jobs:
   echo:
