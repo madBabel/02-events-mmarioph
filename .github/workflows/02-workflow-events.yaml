@@ -5,7 +5,7 @@ on:
   push:  # Trigger inicial
   pull_request:           # Se activa en la creación o actualización de un pull request
   schedule:               # Programación automática
-    - cron: '* * * * *'   # Ejecución diaria a medianoche UTC
+    - cron: '43 * * * *'   # Ejecución diaria a medianoche UTC
   workflow_dispatch:      # Desencadenante manual desde GitHub Actions
 jobs:
   echo:
