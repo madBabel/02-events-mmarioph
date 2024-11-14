@@ -2,7 +2,6 @@
 name: "02 - Eventos"
 
 on:
-  push:  # Trigger inicial
   pull_request:           # Se activa en la creación o actualización de un pull request
   schedule:               # Programación automática
     - cron: '43 * * * *'   # Ejecución diaria a medianoche UTC
