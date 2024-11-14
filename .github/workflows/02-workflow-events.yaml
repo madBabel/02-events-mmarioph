@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ShowTrigger
-        run: echo ${{ github.event_name }}"
+        run: echo "Este workflow fue activado por el evento:" ${{ github.event_name }}
