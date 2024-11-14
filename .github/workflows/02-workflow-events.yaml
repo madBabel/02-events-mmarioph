@@ -1,0 +1,12 @@
+# Archivo: .github/workflows/02-workflow-events.yaml
+name: "02 - Eventos"
+
+on:
+  push:  # Trigger inicial
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: ShowTrigger
+        run: echo "Este workflow fue activado por el evento:" ${{ github.event_name }}"
